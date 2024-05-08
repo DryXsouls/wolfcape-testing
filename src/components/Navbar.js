@@ -3,6 +3,8 @@ import { Button } from './Button';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { ReactComponent as WolfCapeLogo } from './TypeFace-WolfCape.svg';
+
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -11,12 +13,13 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if (window.innerWidth >= 960) {
+        if (window.innerWidth <= 960) {
             setButton(false);
         } else {
             setButton(true);
         }
     };
+
 
     useEffect(() => {
         showButton();
@@ -32,7 +35,8 @@ function Navbar() {
                         <WolfCapeLogo color="white" fill="white" stroke="current" className="navbar-logo-img" alt="WolfCape Logo"/>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fa-solid fa-bars'} />
+                        <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'}/>
+
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -61,7 +65,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn-outline'>SIGN UP</Button>}
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
             </nav>
         </>
