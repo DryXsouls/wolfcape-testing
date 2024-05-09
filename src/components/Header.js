@@ -13,11 +13,13 @@ function Header(){
                 <Button className="btns"
                         buttonStyle='btn--outline'
                         buttonSize='btn--large'
+                        path='/news'
                 >Get Started
                 </Button>
                 <Button className="btns"
                         buttonStyle='btn--primary'
                         buttonSize='btn--large'
+                        path='/gallery'
                 >WATCH TRAILER <i className='far fa-play-circle'/>
                 </Button>
             </div>

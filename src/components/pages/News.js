@@ -5,7 +5,7 @@ function News(){
     return(
       <>
           <div>
-              jadyjadyjada
+              jadyjadyjada news on friday everyday
           </div>
       </>
     );

@@ -36,7 +36,6 @@ function Navbar() {
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'}/>
-
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -60,12 +59,12 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <Link to='/news' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Sign Up
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                       {button && <Button buttonStyle='btn--outline' path="/sign-up">SIGN UP</Button>}
                 </div>
             </nav>
         </>
