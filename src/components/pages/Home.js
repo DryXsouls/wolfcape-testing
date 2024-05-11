@@ -9,7 +9,6 @@ function Home(){
         <>
             <Header/>
             <Articles/>
-            <Footer/>
         </>
     );
 }
