@@ -1,0 +1,58 @@
+.stories{
+    background-color: black;
+}
+
+.stories-headline{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.stories-container{
+    display: flex;
+    max-width: 100%;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 250px;
+    gap: 75px;
+}
+
+.story-item{
+    max-width: 1000px;
+    max-height: 500px;
+}
+.story-item-link{
+    text-decoration: none;
+}
+
+.story-item-img{
+    max-height: 500px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.story-item-details{
+    padding-top: 20px;
+}
+
+.story-title{
+    color: #79654C;
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.story-tags{
+    color: white;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+}
+
+hr{
+    color: #79654C;
+    border-bottom: solid #79654C ;
+}
+
+.story-description{
+    color: white;
+    font-size: 1rem;
+    padding-top: 10px;
+}
