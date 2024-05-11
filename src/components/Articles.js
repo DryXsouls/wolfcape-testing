@@ -11,31 +11,31 @@ function Articles(){
                 <div className="articles__wrapper">
                     <ul className="articles__items">
                         <ArticleItem
-                            src="logo192.png"
+                            src="Behind the scenes.png"
                             text="Explore the Last Tale Spun behind the scenes"
                             label="LastTaleSpun"
                             path='/news'
                         />
                         <ArticleItem
-                            src="logo512.png"
+                            src="Wolfie.png"
                             text="Read through our game stories"
                             label="Stories"
-                            path='/stories'
+                            path='/tales'
                         />
                         <ArticleItem
-                            src="logo192.png"
+                            src="Art Book.png"
                             text="Check our Art book"
                             label="Gallery"
                             path='/gallery'
                         />
                         <ArticleItem
-                            src="logo192.png"
+                            src="Contact.png"
                             text="Contact our wolfs under cape here"
                             label="Contact"
                             path='/contact'
                         />
                         <ArticleItem
-                            src="logo192.png"
+                            src="Steam.png"
                             text="Check Last Tale Spun on Steam"
                             label="LastTaleSpun"
                             path='/contact'
