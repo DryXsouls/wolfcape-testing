@@ -1,13 +1,10 @@
 import React from "react";
-import '../../App.css'
+import '../../App.css';
+import Updates from "../Updates";
 
 function News(){
     return(
-      <>
-          <div>
-              jadyjadyjada news on friday everyday
-          </div>
-      </>
+        <Updates/>
     );
 }
 

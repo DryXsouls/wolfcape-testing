@@ -5,7 +5,7 @@ import './Stories.css';
 function Stories(){
     return(
         <div className='stories'>
-            <h1 className='stories-headline'>Our Titles </h1>
+            <h1 className='stories-headline'>Our Tales </h1>
             <div className='stories-container'>
                 <StoryItem
                     path='/lls'
