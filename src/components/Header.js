@@ -7,8 +7,8 @@ function Header(){
     return(
         <div className="header-container">
            <video src={videoBg} autoPlay loop muted playsInline/>
-            <h1>Wolfie is waiting for you</h1>
-            <p>What are you waiting for?</p>
+            <h1 className='header-title'>Become main character in our stories</h1>
+            <p className='header-sub-title'>Are you ready for adventure?</p>
             <div className="header-btns">
                 <Button className="btns"
                         buttonStyle='btn--outline'

@@ -9,6 +9,7 @@ function About(){
             <div className='about-container'>
                 <div className="about-wolfcape-container">
                     <h2 className='about-wolfcape'>About Studio</h2>
+                    <hr/>
                     <p className='about-studio'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat vitae mauris gravida viverra non id sapien. Sed ut varius mi. Nulla facilisi. Duis suscipit enim eu lorem placerat, ut fringilla neque fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id rutrum magna. Nulla hendrerit eros vel suscipit dignissim. Duis suscipit porttitor nisi porttitor faucibus. Praesent malesuada nunc eget ex scelerisque, ac bibendum ligula ultricies.</p>
                 </div>
                 <div className='about-us-container'>

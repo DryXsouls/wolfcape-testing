@@ -19,18 +19,17 @@ video{
 }
 
 .header-container >h1 {
-    color: #ffff;
-    font-size: 100px;
+    color: #79654C;
+    font-size: 4.5rem;
     margin-top: -100px;
 }
 
 .header-container >p{
     margin-top: 8px;
     color: #ffff;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
 }
-
 .header-btns {
     margin-top: 32px;
 }

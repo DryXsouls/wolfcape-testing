@@ -1,5 +1,5 @@
 import React from "react";
-import StoryItem from "./Story-item";
+import StoryItem from "./StoryItem";
 import './Stories.css';
 
 function Stories(){
@@ -8,7 +8,7 @@ function Stories(){
             <h1 className='stories-headline'>Our Tales </h1>
             <div className='stories-container'>
                 <StoryItem
-                    path='/lls'
+                    path='/lts'
                     src='Steam.png'
                     title='Last Tale Spun'
                     tags='Fantasy Co-Op'
