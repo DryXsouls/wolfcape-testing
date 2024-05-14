@@ -1,0 +1,172 @@
+.story{
+    background-color: black;
+}
+.story-container{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 75px;
+}
+.story-info{
+    display: flex;
+    margin: 50px;
+    gap: 50px;
+}
+.story-info-left{
+    margin: 10px;
+}
+
+.story-info-left-img{
+    width: 600px;
+}
+.story-info-right{
+    margin: 10px;
+}
+.story-info-r-title{
+    color: #79654C;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.story-info-r-details{
+    display: flex;
+    gap: 20px;
+}
+.story-info-r-details h5{
+    color: #79654C;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.story-info-r-details p{
+    color: #ffff;
+    font-size: 1.25rem;
+}
+
+.story-gallery-container{
+    max-width: 1500px;
+    position: relative;
+    margin: 50px;
+}
+.gallery-item{
+    display: none;
+}
+.gallery-item-img{
+    width: 1500px;
+    height: 650px;
+}
+.gallery-item-name{
+    color: white;
+    font-size: 1.5rem;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.gallery-item-name {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.gallery-dots{
+    text-align: center;
+}
+.gallery-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+.story-chapters-wrap{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.story-chapter-basic-info{
+    display: flex;
+}
+.story-chapter-name{
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #79654C;
+}
+.story-chapter-date{
+    margin: 5px;
+    font-size: 1.5rem;
+    padding-left: 1195px;
+    color: #79654C;
+}
+.story-chapters-list{
+    border: 1px solid #79654C;
+    display: flex;
+    flex-direction: column;
+
+}
+.story-chapter{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242222;
+}
+.story_link{
+    display: flex;
+    gap: 1100px;
+    color: #79654C;
+}
+
+.chapter-name-text{
+    font-size: 1.5rem;
+    margin-right: auto;
+    flex: 0 0 auto
+}
+.chapter-date{
+    padding-left: 150px;
+    font-size: 1.5rem;
+    flex: 0 1 auto
+}
