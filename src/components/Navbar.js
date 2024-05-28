@@ -16,7 +16,7 @@ function Navbar() {
         if (window.innerWidth <= 960) {
             setButton(false);
         } else {
-            setButton(true);
+            setButton(false);
         }
     };
 
@@ -64,7 +64,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                       {button && <Button buttonStyle='btn--outline' path="/">SIGN IN</Button>}
+                      {button && <Button buttonStyle='btn--outline' path="/">SIGN IN</Button>}
                 </div>
             </nav>
         </>

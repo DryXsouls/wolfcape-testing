@@ -1,0 +1,45 @@
+.story-chapters-wrap{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.story-chapter-basic-info{
+    display: flex;
+}
+.story-chapter-name{
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #79654C;
+}
+.story-chapter-date{
+    margin: 5px;
+    font-size: 1.5rem;
+    padding-left: 100px;
+    color: #79654C;
+}
+.story-chapters-list{
+    border: 1px solid #79654C;
+    display: flex;
+    flex-direction: column;
+
+}
+.story-chapter{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #242222;
+}
+.story_link{
+    display: flex;
+    gap: 150px;
+    color: #79654C;
+}
+
+.chapter-name-text{
+    font-size: 1.5rem;
+    margin-right: auto;
+    flex: 0 0 auto
+}
+.chapter-date {
+    font-size: 1.5rem;
+}
