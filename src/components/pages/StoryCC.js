@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import StoryChapter from "../StoryChapter";
 import GalleryItem from "../GalleryItem";
 import '../Story.css';
+import {Link} from "react-router-dom";
 function StoryCC(){
     const [slideIndex, setSlideIndex] = useState(1);
 
@@ -91,35 +91,17 @@ function StoryCC(){
                     <span className="gallery-dot" onClick={() => currentSlide(3)}></span>
                 </div>
 
-
-                <div className='story-chapters-wrap'>
-                    <div className='story-chapter-basic-info'>
-                        <p className='story-chapter-name'>Chapter name</p>
-                        <p className='story-chapter-date'>Date</p>
+                <li className="story-steam-wrap">
+                    <Link className="story-steam-link" to='/'>
+                        <figure className="story-steam-img_wrap">
+                            <img src='/CrashedCivilization.png' alt="Steam img" className='story-steam-img'/>
+                        </figure>
+                    </Link>
+                    <div className='story-steam-info'>
+                        <h2 className='story-steam-title'>Steam Link</h2>
+                        <p className='story-steam-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non ex mi. Maecenas in viverra lacus. Integer nec odio eget turpis dapibus dictum eu sed nulla. Nulla vulputate convallis viverra. Nam nibh odio, vestibulum et faucibus et, vulputate vel leo. Nulla porttitor id ante congue dictum. </p>
                     </div>
-                    <ul className='story-chapters-list'>
-                        <StoryChapter
-                            path='/chapter4'
-                            name='Chapter-4'
-                            date='30.11.2025'
-                        />
-                        <StoryChapter
-                            path='/chapter3'
-                            name='Chapter-3'
-                            date='30.10.2025'
-                        />
-                        <StoryChapter
-                            path='/chapter2'
-                            name='Chapter-2'
-                            date='30.9.2025'
-                        />
-                        <StoryChapter
-                            path='/chapter1'
-                            name='Chapter-1'
-                            date='30.8.2025'
-                        />
-                    </ul>
-                </div>
+                </li>
             </div>
         </div>
     );

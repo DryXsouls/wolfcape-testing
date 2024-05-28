@@ -2,9 +2,7 @@
     background-color: black;
 }
 .story-container{
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 75px;
+    padding: 75px 150px 150px;
 }
 .story-info{
     display: flex;
@@ -16,7 +14,9 @@
 }
 
 .story-info-left-img{
-    width: 600px;
+    max-width: 600px;
+    width: auto;
+    min-width: 500px;
 }
 .story-info-right{
     margin: 10px;
@@ -120,53 +120,491 @@
     to {opacity: 1}
 }
 
+.story-steam-wrap{
+    margin-left: 300px;
+    margin-top: 75px;
 
-
-.story-chapters-wrap{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.story-chapter-basic-info{
     display: flex;
+    border-radius: 5px;
+    background: rgba(105,88,66,55%);
+    max-height: 300px;
+    height: auto;
+    min-height: 150px;
+    max-width: 1000px;
+    min-width: 350px;
+    gap: 30px;
 }
-.story-chapter-name{
+.story-steam-link{
+
+}
+.story-steam-img_wrap{
     margin: 5px;
-    font-size: 1.5rem;
-    color: #79654C;
 }
-.story-chapter-date{
-    margin: 5px;
-    font-size: 1.5rem;
-    padding-left: 1195px;
-    color: #79654C;
-}
-.story-chapters-list{
-    border: 1px solid #79654C;
-    display: flex;
-    flex-direction: column;
-
-}
-.story-chapter{
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #242222;
-}
-.story_link{
-    display: flex;
-    gap: 1100px;
-    color: #79654C;
+.story-steam-img{
+    max-height: 290px;
+    min-height: 150px;
+    height: auto;
+    border-radius: 5px;
 }
 
-.chapter-name-text{
-    font-size: 1.5rem;
-    margin-right: auto;
-    flex: 0 0 auto
+.story-steam-info{
+    margin: 5px;
+    border-radius: 5px;
+    background: rgba(105,88,66,35%);
 }
-.chapter-date{
-    padding-left: 150px;
-    font-size: 1.5rem;
-    flex: 0 1 auto
+.story-steam-title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: white;
+    margin-top: 35px;
+}
+.story-steam-text{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 10px;
+    color: black;
+}
+
+@media screen and (max-width: 1600px) {
+    .story-info{
+        display: flex;
+        margin: 25px;
+        gap: 25px;
+    }
+    .story-info-left-img{
+        max-width: 550px;
+        width: auto;
+        min-width: 400px;
+    }
+
+    .story-container{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 75px;
+    }
+    .story-info{
+        display: flex;
+        margin: 50px;
+        gap: 50px;
+    }
+
+    .story-info-left-img{
+        width: 600px;
+    }
+
+    .story-info-r-title{
+        color: #79654C;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .story-info-r-details{
+        display: flex;
+        gap: 20px;
+    }
+    .story-info-r-details h5{
+        color: #79654C;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    .story-info-r-details p{
+        color: #ffff;
+        font-size: 1.25rem;
+    }
+
+
+
+    .story-gallery-container{
+        max-width: 1500px;
+        position: relative;
+        margin: 50px;
+    }
+    .gallery-item{
+        display: none;
+    }
+    .gallery-item-img{
+        width: 1300px;
+        height: 650px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 200px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 300px;
+        height: auto;
+        min-height: 150px;
+        max-width: 1000px;
+        min-width: 350px;
+        gap: 30px;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 150px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: white;
+        margin-top: 35px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 1280px) {
+
+    .story-info-left-img{
+        max-width: 450px;
+        width: auto;
+        min-width: 400px;
+    }
+
+
+
+
+    .story-gallery-container{
+        max-width: 1000px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 975px;
+        height: 650px;
+    }
+
+
+
+
+
+
+
+    .story-steam-wrap{
+        margin-left: 60px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 300px;
+        height: auto;
+        min-height: 150px;
+        max-width: 800px;
+        min-width: 350px;
+        gap: 30px;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 150px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: white;
+        margin-top: 35px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+
+}
+@media screen and (max-width: 1152px) {
+    .story-info{
+        margin: 25px;
+        gap: 25px;
+    }
+    .story-info-left-img{
+        max-width: 380px;
+        width: auto;
+        min-width: 350px;
+    }
+
+
+    .story-gallery-container{
+        max-width: 1200px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 850px;
+        height: 450px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 40px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 300px;
+        height: auto;
+        min-height: 150px;
+        max-width: 900px;
+        min-width: 350px;
+        gap: 30px;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 150px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: white;
+        margin-top: 35px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .story-info{
+        margin: 20px;
+        gap: 20px;
+    }
+    .story-info-left-img{
+        max-width: 300px;
+        width: auto;
+        min-width: 280px;
+    }
+
+    .story-gallery-container{
+        max-width: 800px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 724px;
+        height: 400px;
+    }
+
+
+
+
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 290px;
+        height: auto;
+        max-width: 400px;
+        min-width: 350px;
+        border-radius: 5px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.15rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 960px) {
+    .story-info{
+        margin: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .story-info-left-img{
+        max-width: 700px;
+        min-width: 700px;
+
+
+        height: 350px;
+    }
+
+    .story-gallery-container{
+        max-width: 900px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 660px;
+        height: 350px;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 290px;
+        height: auto;
+        max-width: 370px;
+        min-width: 350px;
+        border-radius: 5px;
+    }
+
+    .story-steam-title{
+        font-size: 1.50rem;
+
+    }
+    .story-steam-text{
+        font-size: 1.15rem;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .story-info{
+        margin: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .story-info-left-img{
+        max-width: 520px;
+        min-width: 520px;
+
+        height: 275px;
+    }
+
+    .story-gallery-container{
+        max-width: 650px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 468px;
+        height: 300px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 30px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 600px;
+        height: auto;
+        min-height: 150px;
+        max-width: 520px;
+        min-width: 350px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 250px;
+        height: auto;
+        max-width: 520px;
+        min-width: 520px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 320px) {
+    .story-container{
+        padding: 55px 10px 150px;
+    }
+
+    .story-info{
+        margin: 2px;
+        gap: 5px;
+        flex-direction: column;
+    }
+    .story-info-left-img{
+        max-width: 280px;
+        min-width: 280px;
+
+        height: 175px;
+    }
+
+    .story-gallery-container{
+        max-width: 1000px;
+        position: relative;
+        margin: 50px;
+    }
+
+    .gallery-item-img{
+        width: 200px;
+        height: 125px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 2px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 700px;
+        height: auto;
+        min-height: 150px;
+        max-width: 300px;
+        min-width: 275px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .story-steam-img{
+        max-width: 285px;
+        min-width: 285px;
+        max-height: 175px;
+        min-height: 160px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 2px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
 }

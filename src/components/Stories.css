@@ -1,5 +1,6 @@
 .stories{
     background-color: black;
+    height: 150vh;
 }
 
 .stories-headline{
@@ -56,4 +57,208 @@ hr{
     color: white;
     font-size: 1rem;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+    .stories-container{
+        max-width: 1450px;
+        width: auto;
+        min-width: 1000px;
+    }
+    .story-item{
+        max-width: 700px;
+        width: auto;
+        min-width: 600px;
+        max-height: 500px;
+    }
+    .story-item-img{
+        max-height: 500px;
+        height: auto;
+        min-height: 450px;
+        max-width: 700px;
+        width: auto;
+        min-width: 600px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .stories-container{
+        max-width: 1150px;
+        width: auto;
+        min-width: 1000px;
+    }
+    .story-item{
+        max-width: 550px;
+        width: auto;
+        min-width: 450px;
+        max-height: 500px;
+    }
+    .story-item-img{
+        max-height: 400px;
+        height: auto;
+        min-height: 350px;
+        max-width: 550px;
+        width: auto;
+        min-width: 450px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .stories-container{
+        max-width: 1050px;
+        width: auto;
+        min-width: 1000px;
+    }
+    .story-item{
+        max-width: 475px;
+        width: auto;
+        min-width: 425px;
+        max-height: 500px;
+    }
+    .story-item-img{
+        max-height: 350px;
+        height: auto;
+        min-height: 320px;
+        max-width: 475px;
+        width: auto;
+        min-width: 425px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .stories-container{
+        max-width: 900px;
+        width: auto;
+        min-width: 800px;
+    }
+    .story-item{
+        max-width: 425px;
+        width: auto;
+        min-width: 350px;
+        max-height: 500px;
+    }
+    .story-item-img{
+        max-height: 300px;
+        height: auto;
+        min-height: 280px;
+        max-width: 425px;
+        width: auto;
+        min-width: 350px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 960px) {
+    .stories{
+        height: 200vh;
+    }
+    .stories-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        width: auto;
+        min-width: 700px;
+
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 250px;
+        gap: 75px;
+    }
+
+    .story-item{
+        max-width: 900px;
+        width: auto;
+        min-width: 700px;
+        max-height: 1000px;
+    }
+
+    .story-item-img{
+        max-height: 500px;
+        height: auto;
+        min-height: 350px;
+        max-width: 900px;
+        width: auto;
+        min-width: 900px;
+        text-align: center;
+    }
+
+    .story-item-details{
+        padding-top: 20px;
+    }
+
+    .story-title{
+        color: #79654C;
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+
+    .story-tags{
+        color: white;
+        font-size: 1.25rem;
+        padding-bottom: 5px;
+    }
+
+    hr{
+        color: #79654C;
+        border-bottom: solid #79654C ;
+    }
+
+    .story-description{
+        color: white;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .stories-container{
+        max-width: 700px;
+        width: auto;
+        min-width: 300px;
+    }
+
+    .story-item{
+        max-width: 700px;
+        width: auto;
+        min-width: 300px;
+    }
+
+    .story-item-img{
+        max-height: 500px;
+        height: auto;
+        min-height: 350px;
+        max-width: 700px;
+        width: auto;
+        min-width: 700px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .stories-container{
+        max-width: 300px;
+        width: auto;
+        min-width: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .story-item{
+        max-width: 300px;
+        width: auto;
+        min-width: 250px;
+    }
+
+    .story-item-img{
+        max-height: 200px;
+        height: auto;
+        min-height: 100px;
+        max-width: 300px;
+        width: auto;
+        min-width: 250px;
+        text-align: center;
+    }
+    .story-title{
+        color: #79654C;
+        font-size: 1.75rem;
+        padding-bottom: 15px;
+    }
 }
