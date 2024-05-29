@@ -495,7 +495,34 @@
         color: white;
     }
 }
+@media screen and (max-width: 550px){
+    .about-container{
+        max-width: 540px;
+        width: 500px;
+    }
 
+    .about-wolfcape-container{
+        max-width: 530px;
+        min-width: 530px;
+    }
+
+    .about-us-container{
+        max-width: 530px;
+        min-width: 530px;
+    }
+
+    .about-photo-wrap{
+        max-width: 500px;
+        width: auto;
+        min-width: 500px;
+
+    }
+    .about-photo{
+        max-width: 300px;
+        width: 295px;
+        min-width: 290px;
+    }
+}
 @media screen and (max-width: 480px) {
 
     .about-photo-wrap {
@@ -531,113 +558,33 @@
         color: white;
     }
 }
-
-@media screen and (max-width: 550px){
-    .about-container{
-        max-width: 540px;
-        width: 500px;
-    }
-
-    .about-wolfcape-container{
-        max-width: 530px;
-        min-width: 530px;
-    }
-
-    .about-us-container{
-        max-width: 530px;
-        min-width: 530px;
-    }
-
-    .about-photo-wrap{
-        max-width: 500px;
-        width: auto;
-        min-width: 500px;
-
-    }
-    .about-photo{
-        max-width: 300px;
-        width: 295px;
-        min-width: 290px;
-    }
-}
-
 @media screen and (max-width: 425px){
     .about-container{
-        padding-top: 20px;
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-bottom: 10px;
         max-width: 400px;
-        display: flex;
         width: 400px;
-        flex-direction: column;
     }
 
     .about-wolfcape-container{
-        padding-bottom: 30px;
-        border-right: 0;
-        border-bottom: 4px solid #79654C;
-        padding-left: 1px;
-        padding-right: 1px;
         max-width: 410px;
         min-width: 410px;
-        text-align: center;
-        margin-left: 2px;
-        margin-right: 2px;
     }
 
     .about-us-container{
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
         max-width: 410px;
         min-width: 410px;
-        gap: 5px;
-        text-align: center;
     }
 
-    .about-wolfcape{
-        font-size: 2rem;
-        color: #79654C;
-        font-weight: bold;
-    }
-    .about-studio{
-        font-size: 1.25rem;
-        color: white;
-    }
-
-    .about-item{
-        margin: 1px;
-    }
     .about-photo-wrap{
-        position: relative;
-        margin: 5px;
-        flex: 0 0 auto;
         max-width: 410px;
         width: auto;
         min-width: 410px;
         max-height: 450px;
-        text-align: center;
     }
     .about-photo{
         max-width: 300px;
         width: 295px;
         min-width: 290px;
 
-    }
-    .about-name{
-        font-size: 2rem;
-        color: #79654C;
-        font-weight: bold;
-    }
-    .about-position{
-        font-size: 1.5rem;
-        color: white;
-        font-weight: bold;
-    }
-    .about-info{
-        font-size: 1.25rem;
-        color: white;
     }
 }
 @media screen and (max-width: 375px){
@@ -647,44 +594,19 @@
     }
 
     .about-wolfcape-container{
-
         max-width: 365px;
         min-width: 365px;
-
     }
 
     .about-us-container{
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        max-width: 530px;
-        min-width: 530px;
-        gap: 5px;
-        text-align: center;
+        max-width: 360px;
+        min-width: 360px;
     }
 
-    .about-wolfcape{
-        font-size: 2rem;
-        color: #79654C;
-        font-weight: bold;
-    }
-    .about-studio{
-        font-size: 1.25rem;
-        color: white;
-    }
-
-    .about-item{
-        margin: 1px;
-    }
     .about-photo-wrap{
-        position: relative;
-        margin: 5px;
-        flex: 0 0 auto;
-        max-width: 500px;
-        width: auto;
-        min-width: 500px;
+        max-width: 360px;
+        min-width: 360px;
         max-height: 450px;
-        text-align: center;
     }
     .about-photo{
         max-width: 300px;
@@ -707,7 +629,6 @@
         color: white;
     }
 }
-
 @media screen and (max-width: 320px){
     .about-container{
         padding-top: 20px;
