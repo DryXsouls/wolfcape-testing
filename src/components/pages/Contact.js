@@ -4,7 +4,32 @@ import { ReactComponent as WolfCapeLogo } from '../TypeFace-WolfCape.svg';
 import '../Contact.css';
 import Map from "../Map";
 
+
 function Contact(){
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "219df00a-857c-4a09-b8c7-d50bc542269f");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    }
     return(
         <div className='contacts'>
             <div className='contacts-container'>
@@ -32,6 +57,24 @@ function Contact(){
                     <img src="/Steam.png" alt='contact-image3' className='contacts-image-3'/>
                     <img src="/panda.jpg" alt='contact-image3' className='contacts-image-4'/>
                     <img src="/Contact.png" alt='contact-image3' className='contacts-image-5'/>
+                </div>
+                <div className='email-form-container'>
+                    <form onSubmit={onSubmit} className='email-from'>
+                        <div className="email-input">
+                            <input type="text" id="e-mail" required/>
+                            <label htmlFor="e-mail">Your e-mail</label>
+                        </div>
+                        <div className="email-input">
+                            <input type="text" id="subject" required/>
+                            <label htmlFor="subject">Subject</label>
+                        </div>
+                        <div className="email-input">
+                            <textarea id="message" rows="8" required/>
+                            <label htmlFor="message">Your Message</label>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                    <span>{result}</span>
                 </div>
                 <div className='contacts-map-wrap'>
                     <Map/>
