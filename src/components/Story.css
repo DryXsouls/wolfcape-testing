@@ -439,17 +439,18 @@
     }
 }
 @media screen and (max-width: 960px) {
+    .story-container{
+        padding: 75px 15px 150px;
+    }
     .story-info{
         margin: 20px;
         gap: 20px;
         flex-direction: column;
     }
     .story-info-left-img{
-        max-width: 700px;
-        min-width: 700px;
-
-
-        height: 350px;
+        max-width: 900px;
+        min-width: 850px;
+        height: 450px;
     }
 
     .story-gallery-container{
@@ -459,10 +460,13 @@
     }
 
     .gallery-item-img{
-        width: 660px;
+        width: 830px;
         height: 350px;
     }
 
+    .story-steam-wrap{
+        width: 840px;
+    }
     .story-steam-img{
         max-height: 290px;
         min-height: 290px;
@@ -482,6 +486,7 @@
     }
 }
 @media screen and (max-width: 768px) {
+
     .story-info{
         margin: 20px;
         gap: 20px;
@@ -526,6 +531,183 @@
         height: auto;
         max-width: 520px;
         min-width: 520px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 550px) {
+    .story-container{
+        padding: 75px 8px 150px;
+    }
+    .story-info{
+        margin: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .story-info-left-img{
+        max-width: 480px;
+        min-width: 480px;
+        height: 275px;
+    }
+
+    .story-gallery-container{
+        max-width: 650px;
+        position: relative;
+        margin: 30px;
+    }
+
+    .gallery-item-img{
+        width: 468px;
+        height: 300px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 25px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 600px;
+        height: auto;
+        min-height: 150px;
+        max-width: 470px;
+        min-width: 350px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .story-steam-img{
+        max-height: 290px;
+        min-height: 250px;
+        height: auto;
+        max-width: 460px;
+        min-width: 460px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 425px) {
+
+    .story-info-left-img{
+        max-width: 350px;
+        min-width: 350px;
+        height: 205px;
+    }
+
+    .story-gallery-container{
+        max-width: 650px;
+        position: relative;
+        margin: 30px;
+    }
+
+    .gallery-item-img{
+        width: 350px;
+        height: 200px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 25px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 600px;
+        height: auto;
+        min-height: 150px;
+        max-width: 360px;
+        min-width: 350px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .story-steam-img{
+        max-height: 250px;
+        min-height: 200px;
+        height: auto;
+        max-width: 350px;
+        min-width: 350px;
+    }
+
+    .story-steam-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+        margin-top: 5px;
+    }
+    .story-steam-text{
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin: 10px;
+        color: black;
+    }
+}
+@media screen and (max-width: 375px) {
+    .story-info-left-img{
+        max-width: 300px;
+        min-width: 300px;
+        height: 175px;
+    }
+
+    .story-gallery-container{
+        max-width: 300px;
+        position: relative;
+        margin: 30px;
+    }
+
+    .gallery-item-img{
+        width: 300px;
+        height: 200px;
+    }
+
+
+    .story-steam-wrap{
+        margin-left: 25px;
+        display: flex;
+        border-radius: 5px;
+        background: rgba(105,88,66,55%);
+        max-height: 600px;
+        height: auto;
+        min-height: 150px;
+        max-width: 300px;
+        min-width: 300px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .story-steam-img{
+        max-height: 200px;
+        min-height: 180px;
+        height: auto;
+        max-width: 290px;
+        min-width: 290px;
     }
 
     .story-steam-title{

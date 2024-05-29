@@ -1,3 +1,4 @@
+
 .contacts{
     background-color: black;
     min-height: 100vh;
@@ -829,6 +830,266 @@ textarea:valid~label{
         max-height: 400px;
         height: auto;
         min-height: 400px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contacts-container{
+        max-width: 540px;
+        width: auto;
+        min-width: 540px;
+    }
+
+    .contacts-logo-img{
+        max-width: 490px;
+        width: auto;
+        min-width: 490px;
+        max-height: 200px;
+    }
+
+    .contacts-details{
+        max-width: 520px;
+        width: auto;
+        min-width: 490px;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .contacts-images{
+        max-width: 490px;
+        width: auto;
+        min-width: 490px;
+        grid-row: 1;
+        grid-column: 2;
+        left: -90%;
+        display: grid;
+        padding-top: 5px;
+        grid-template-columns: repeat(10,49px);
+        grid-template-rows:  repeat(10,25px);
+    }
+    .contacts-image-1{
+        width: 255px;
+        grid-area: 1 / 1 / 5 / 6;
+
+    }
+
+    .contacts-image-2{
+        width: 255px;
+        grid-area: 7 / 1 / 10 / 10;
+
+    }
+
+    .contacts-image-3{
+        width: 265px;
+        height: 150px;
+        grid-area: 0 / 5 / 5 / 10;
+    }
+
+    .contacts-image-4{
+        width: 265px;
+        min-width: 265px;
+        height: 140px;
+        grid-area: 7 / 6 / 10 / 10;
+    }
+    .contacts-image-5{
+        width: 175px;
+        grid-area: 4 / 4 / 7 / 7;
+        z-index: 2;
+    }
+
+    .contacts-map-wrap{
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 300px;
+        width: auto;
+        min-width: 280px;
+        padding-top: 50px;
+    }
+    .google-contact-map{
+        max-width: 500px;
+        width: auto;
+        min-width: 490px;
+        height: 300px;
+    }
+
+    .email-form-container{
+        max-width: 520px;
+        width: auto;
+        min-width: 295px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .contacts-container{
+        max-width: 410px;
+        width: auto;
+        min-width: 410px;
+    }
+
+    .contacts-logo-img{
+        max-width: 380px;
+        width: auto;
+        min-width: 380px;
+        max-height: 200px;
+    }
+
+    .contacts-details{
+        max-width: 400px;
+        width: auto;
+        min-width: 400px;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .contacts-images{
+        max-width: 400px;
+        width: auto;
+        min-width: 400px;
+        grid-row: 1;
+        grid-column: 2;
+        left: -90%;
+        display: grid;
+        padding-top: 5px;
+        grid-template-columns: repeat(10,40px);
+        grid-template-rows:  repeat(10,20px);
+    }
+    .contacts-image-1{
+        width: 205px;
+        grid-area: 1 / 1 / 5 / 6;
+
+    }
+
+    .contacts-image-2{
+        width: 205px;
+        grid-area: 7 / 1 / 10 / 10;
+
+    }
+
+    .contacts-image-3{
+        width: 200px;
+        height: 150px;
+        grid-area: 0 / 5 / 5 / 10;
+    }
+
+    .contacts-image-4{
+        width: 200px;
+        min-width: 200px;
+        height: 140px;
+        grid-area: 7 / 6 / 10 / 10;
+    }
+    .contacts-image-5{
+        width: 145px;
+        grid-area: 4 / 4 / 7 / 7;
+        z-index: 2;
+    }
+
+    .contacts-map-wrap{
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 300px;
+        width: auto;
+        min-width: 280px;
+        padding-top: 50px;
+    }
+    .google-contact-map{
+        max-width: 365px;
+        width: auto;
+        min-width: 365px;
+        height: 170px;
+    }
+
+    .email-form-container{
+        max-width: 395px;
+        width: auto;
+        min-width: 295px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contacts{
+        height: 260vh;
+    }
+    .contacts-container{
+        max-width: 365px;
+        width: auto;
+        min-width: 340px;
+    }
+    .contacts-logo-img{
+        max-width: 325px;
+        width: auto;
+        min-width: 325px;
+        max-height: 200px;
+    }
+
+    .contacts-details{
+        max-width: 345px;
+        width: auto;
+        min-width: 345px;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .contacts-images{
+        max-width: 345px;
+        width: auto;
+        min-width: 345px;
+        grid-row: 1;
+        grid-column: 2;
+        left: -90%;
+        display: grid;
+        padding-top: 5px;
+        grid-template-columns: repeat(10,35px);
+        grid-template-rows:  repeat(10,18px);
+    }
+    .contacts-image-1{
+        width: 175px;
+        grid-area: 1 / 1 / 5 / 6;
+
+    }
+
+    .contacts-image-2{
+        width: 175px;
+        grid-area: 7 / 1 / 10 / 10;
+
+    }
+
+    .contacts-image-3{
+        width: 175px;
+        height: 125px;
+        grid-area: 0 / 5 / 5 / 10;
+    }
+
+    .contacts-image-4{
+        width: 175px;
+        min-width: 175px;
+        height: 100px;
+        grid-area: 7 / 6 / 10 / 10;
+    }
+    .contacts-image-5{
+        width: 125px;
+        grid-area: 4 / 4 / 7 / 7;
+        z-index: 2;
+    }
+
+    .contacts-map-wrap{
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 300px;
+        width: auto;
+        min-width: 280px;
+        padding-top: 50px;
+    }
+    .google-contact-map{
+        max-width: 315px;
+        width: auto;
+        min-width: 315px;
+        max-height: 275px;
+        height: 270px;
+        min-height: 275px;
+    }
+
+    .email-form-container{
+        max-width: 395px;
+        width: auto;
+        min-width: 295px;
+        padding-top: 50px;
     }
 }
 @media screen and (max-width: 320px) {

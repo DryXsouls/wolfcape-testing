@@ -61,8 +61,8 @@ function Contact(){
                 <div className='email-form-container'>
                     <form onSubmit={onSubmitMail} className='email-from'>
                         <div className="email-input">
-                            <input type="text" name="e-mail" required/>
-                            <label htmlFor="e-mail">Your e-mail</label>
+                            <input type="email" name="email" required/>
+                            <label htmlFor="email">Your e-mail</label>
                         </div>
                         <div className="email-input">
                             <input type="text" name="subject" required/>

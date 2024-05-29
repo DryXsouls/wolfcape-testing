@@ -177,7 +177,32 @@
          display: none;
      }
 }
+@media screen and (max-width: 550px) {
+    .navbar-logo {
+        top: 0;
+        left: -75px;
+        width: 280px;
+    }
+}
+@media screen and (max-width: 425px) {
 
+}
+@media screen and (max-width: 375px) {
+    .navbar-logo {
+        color: #fff;
+        justify-self: start;
+        margin-left: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -60px;
+        width: 270px;
+    }
+}
 @media screen and (max-width: 320px){
     .navbar {
         background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
@@ -214,6 +239,7 @@
         position: absolute;
         top: 0;
         left: -70px;
+        width: 300px;
     }
 
     .navbar-logo-img{
