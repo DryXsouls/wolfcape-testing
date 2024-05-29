@@ -8,7 +8,7 @@ import Map from "../Map";
 function Contact(){
     const [result, setResult] = React.useState("");
 
-    const onSubmit = async (event) => {
+    const onSubmitMail = async (event) => {
         event.preventDefault();
         setResult("Sending....");
         const formData = new FormData(event.target);
@@ -59,17 +59,17 @@ function Contact(){
                     <img src="/Contact.png" alt='contact-image3' className='contacts-image-5'/>
                 </div>
                 <div className='email-form-container'>
-                    <form onSubmit={onSubmit} className='email-from'>
+                    <form onSubmit={onSubmitMail} className='email-from'>
                         <div className="email-input">
-                            <input type="text" id="e-mail" required/>
+                            <input type="text" name="e-mail" required/>
                             <label htmlFor="e-mail">Your e-mail</label>
                         </div>
                         <div className="email-input">
-                            <input type="text" id="subject" required/>
+                            <input type="text" name="subject" required/>
                             <label htmlFor="subject">Subject</label>
                         </div>
                         <div className="email-input">
-                            <textarea id="message" rows="8" required/>
+                            <textarea name="message" rows="8" required/>
                             <label htmlFor="message">Your Message</label>
                         </div>
                         <button type="submit">Send</button>

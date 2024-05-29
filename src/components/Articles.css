@@ -179,6 +179,33 @@ h5{
         max-height: 375px ;
     }
 }
+@media screen and (max-width: 550px) {
+    .articles__container {
+        margin: 5px;
+    }
+
+    .article__item_pic_wrap {
+        max-width: 450px;
+        min-width: 375px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .article_item_img {
+        max-width: 450px;
+        max-height: 375px;
+    }
+
+    .article__item__text {
+        font-size: 1.5rem;
+    }
+
+    .articles__wrapper {
+        position: relative;
+        margin: 50px 0 45px;
+        padding-bottom: 20px;
+    }
+}
 @media screen and (max-width: 320px) {
     .articles__container{
         margin: 5px;
