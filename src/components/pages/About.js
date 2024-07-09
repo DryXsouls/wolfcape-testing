@@ -2,47 +2,54 @@ import React from 'react';
 import '../../App.css';
 import AboutItem from "../AboutItem";
 import '../About.css';
+import {useTranslation} from "react-i18next";
 
 function About(){
+    const{t}=useTranslation();
     return(
         <div className='about'>
             <div className='about-container'>
                 <div className="about-wolfcape-container">
-                    <h2 className='about-wolfcape'>About Studio</h2>
+                    <h2 className='about-wolfcape'>{t("aboutStudioHeader")}</h2>
                     <hr/>
-                    <p className='about-studio'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat vitae mauris gravida viverra non id sapien. Sed ut varius mi. Nulla facilisi. Duis suscipit enim eu lorem placerat, ut fringilla neque fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id rutrum magna. Nulla hendrerit eros vel suscipit dignissim. Duis suscipit porttitor nisi porttitor faucibus. Praesent malesuada nunc eget ex scelerisque, ac bibendum ligula ultricies.</p>
+                    <p className='about-studio'>{t("aboutStudioParagraph")}</p>
                 </div>
                 <div className='about-us-container'>
                     <AboutItem
                         src='/Contact.png'
                         name='Matúš Zatykáč'
-                        position='Lead Designer'
-                        info='Studied in city Žilina at University of Zilina jady jady jada...'
+                        position={t("leadDesigner")}
+                        info={t("leadDesignerParagraph")}
                     />
                     <AboutItem
                         src='/Contact.png'
                         name='David Pavlas'
-                        position='Lead Programmer'
-                        info='He fun
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat vitae mauris gravida viverra non id sapien. Sed ut varius mi. Nulla facilisi. Duis suscipit enim eu lorem placerat, ut fringilla neque fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id rutrum magna. Nulla hendrerit eros vel suscipit dignissim. Duis suscipit porttitor nisi porttitor faucibus. Praesent malesuada nunc eget ex scelerisque, ac bibendum ligula ultricies.'
+                        position={t("leadProgrammer")}
+                        info={t("leadProgrammerParagraph")}
                     />
                     <AboutItem
                         src='/Contact.png'
                         name='Richard Baddas'
-                        position='Senior Programmer'
-                        info='He Beach BOY
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat vitae mauris gravida viverra non id sapien. Sed ut varius mi. Nulla facilisi. Duis suscipit enim eu lorem placerat, ut fringilla neque fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id rutrum magna. Nulla hendrerit eros vel suscipit dignissim. Duis suscipit porttitor nisi porttitor faucibus. Praesent malesuada nunc eget ex scelerisque, ac bibendum ligula ultricies.'
+                        position={t("seniorProgrammer")}
+                        info={t("seniorProgrammerParagraph")}
                     />
                     <AboutItem
                         src='/Contact.png'
                         name='Lord Samuel IV'
-                        position='Lead Psychologist'
-                        info='He cures our mental issues but he also creates them...'/>
+                        position={t("leadLevelDesigner")}
+                        info={t("leadLevelDesignerParagraph")}
+                    />
                     <AboutItem
                         src='/Contact.png'
                         name='Ardian Crypto'
-                        position='Lead Money Thief'
-                        info='He Rich   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat vitae mauris gravida viverra non id sapien. Sed ut varius mi. Nulla facilisi. Duis suscipit enim eu lorem placerat, ut fringilla neque fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id rutrum magna. Nulla hendrerit eros vel suscipit dignissim. Duis suscipit porttitor nisi porttitor faucibus. Praesent malesuada nunc eget ex scelerisque, ac bibendum ligula ultricies.'
+                        position={t("leadEnvironmentArtist")}
+                        info={t("leadEnvironmentArtistParagraph")}
+                    />
+                    <AboutItem
+                        src='/Contact.png'
+                        name='Timea Pavlas'
+                        position={t("leadConceptArtist")}
+                        info={t("leadConceptArtistParagraph")}
                     />
                 </div>
             </div>
