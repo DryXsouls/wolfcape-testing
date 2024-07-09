@@ -1,9 +1,10 @@
 import React from "react";
 import ArticleItem from "./ArticleItem";
 import './Articles.css';
+import {useTranslation} from "react-i18next";
 
 function Articles(){
-
+    const{t}=useTranslation();
     return(
         <div className='articles'>
             <div className='articles__container'>
@@ -11,32 +12,32 @@ function Articles(){
                     <ul className="articles__items">
                         <ArticleItem
                             src="Art Book.png"
-                            text="We are WolfCape get to know us"
-                            label="About"
+                            text={t("homeAbout")}
+                            label={t("homeAboutLabel")}
                             path='/About'
                         />
                         <ArticleItem
                             src="Behind the scenes.png"
-                            text="Explore the Last Tale Spun behind the scenes"
-                            label="LastTaleSpun"
+                            text={t("homeNews")}
+                            label={t("homeNewsLabel")}
                             path='/news'
                         />
                         <ArticleItem
                             src="Wolfie.png"
-                            text="Read through our game stories"
-                            label="Stories"
+                            text={t("homeTales")}
+                            label={t("homeTalesLabel")}
                             path='/tales'
                         />
                         <ArticleItem
                             src="Contact.png"
-                            text="Contact our wolfs under cape here"
-                            label="Contact"
+                            text={t("homeContact")}
+                            label={t("homeContactLabel")}
                             path='/contact'
                         />
                         <ArticleItem
                             src="Steam.png"
-                            text="Check Last Tale Spun on Steam"
-                            label="LastTaleSpun"
+                            text={t("homeSteam")}
+                            label={t("homeSteamLabel")}
                             path='/contact'
                         />
                     </ul>

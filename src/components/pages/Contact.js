@@ -3,11 +3,12 @@ import '../../App.css';
 import { ReactComponent as WolfCapeLogo } from '../TypeFace-WolfCape.svg';
 import '../Contact.css';
 import Map from "../Map";
+import {useTranslation} from "react-i18next";
 
 
 function Contact(){
     const [result, setResult] = React.useState("");
-
+    const{t} = useTranslation();
     const onSubmitMail = async (event) => {
         event.preventDefault();
         setResult("Sending....");
@@ -35,9 +36,9 @@ function Contact(){
             <div className='contacts-container'>
                 <div className='contacts-details'>
                     <WolfCapeLogo color="#79654C" fill="#79654C" stroke="current" className="contacts-logo-img" alt="WolfCape Logo"/>
-                    <h2>Contact</h2>
+                    <h2>{t("contactHeader")}</h2>
                     <div className='contacts-detail'>
-                        <h3 className='detail-title'>Address</h3>
+                        <h3 className='detail-title'>{t("contactAddress")}</h3>
                         <hr/>
                         <p>Wolfcape Studios s.r.o</p>
                         <p>River Park</p>
@@ -45,10 +46,10 @@ function Contact(){
                         <p>841 02 Bratislava</p>
                     </div>
                     <div className='contacts-detail'>
-                        <h3 className='detail-title'>Contact</h3>
+                        <h3 className='detail-title'>{t("contactHeader")}</h3>
                         <hr/>
                         <p>E-mail: info@wolfcapestudios.sk</p>
-                        <p>Phone: +421 xxx xxx xxx</p>
+                        <p>{t("contactPhone")}: +421 xxx xxx xxx</p>
                     </div>
                 </div>
                 <div className='contacts-images'>
@@ -62,17 +63,17 @@ function Contact(){
                     <form onSubmit={onSubmitMail} className='email-from'>
                         <div className="email-input">
                             <input type="email" name="email" required/>
-                            <label htmlFor="email">Your e-mail</label>
+                            <label htmlFor="email">{t("contactFormEmail")}</label>
                         </div>
                         <div className="email-input">
                             <input type="text" name="subject" required/>
-                            <label htmlFor="subject">Subject</label>
+                            <label htmlFor="subject">{t("contactFormSubject")}</label>
                         </div>
                         <div className="email-input">
                             <textarea name="message" rows="8" required/>
-                            <label htmlFor="message">Your Message</label>
+                            <label htmlFor="message">{t("contactFormMessage")}</label>
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit">{t("contactFormSend")}</button>
                     </form>
                     <span>{result}</span>
                 </div>

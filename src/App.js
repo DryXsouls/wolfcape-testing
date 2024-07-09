@@ -9,7 +9,16 @@ import Contact from './components/pages/Contact';
 import Footer from "./components/Footer";
 import StoryLTS from "./components/pages/StoryLTS";
 import StoryCC from "./components/pages/StoryCC";
+import SignIn from "./components/pages/SignIn";
+import SignUp from "./components/pages/SignUp";
+import Profile from "./components/pages/Profile";
+import axios from 'axios';
+import {useTranslation} from "react-i18next";
+import './i18n.js';
+
 function App() {
+    axios.defaults.withCredentials = true;
+    const{t}=useTranslation();
   return (
       <>
           <Router>
@@ -22,6 +31,9 @@ function App() {
                   <Route path='/Contact' exact element={<Contact/>}/>
                   <Route path='/lts' exact element={<StoryLTS/>}/>
                   <Route path='/cc' exact element={<StoryCC/>}/>
+                  <Route path='/SignIn' exact element={<SignIn/>}/>
+                  <Route path='/SignUp' exact element={<SignUp/>}/>
+                  <Route path ='/Profile' exact element={<Profile/>}/>
               </Routes>
               <Footer/>
           </Router>
